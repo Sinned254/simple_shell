@@ -161,7 +161,7 @@ int _forkprocess(char **av, char *buffer, char *fullpathbuffer)
 			exit(127);
 		}
 	}
-	wait(&status)
+	wait(&status);
 		if (WIFEXITED(status))
 		{
 			exitstatus = WEXITSTATUS(status);
